@@ -46,6 +46,10 @@ st.write(pd.DataFrame({
 st.subheader('Prediction')
 #st.write(iris.target_names[prediction])
 st.write(prediction)
+from PIL import Image
+image = Image.open('sunrise.jpg')
+
+st.image(image, caption='Sunrise by the mountains')
 
 st.subheader('Prediction Probability')
 st.write(prediction_proba)

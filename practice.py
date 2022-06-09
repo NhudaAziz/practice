@@ -6,6 +6,9 @@ st.write("""
 # Simple Iris Flower Prediction App
 This app predicts the **Iris flower** type!
 """)
+st.image(
+    "https://miro.medium.com/max/1000/1*nfK3vGZkTa4GrO7yWpcS-Q.png"
+)
 
 st.sidebar.header('User Input Parameters')
 
@@ -46,9 +49,6 @@ st.write(pd.DataFrame({
 st.subheader('Prediction')
 #st.write(iris.target_names[prediction])
 st.write(prediction)
-st.image(
-    "https://miro.medium.com/max/1000/1*nfK3vGZkTa4GrO7yWpcS-Q.png"
-)
 
 st.subheader('Prediction Probability')
 st.write(prediction_proba)
